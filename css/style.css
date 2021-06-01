@@ -1,0 +1,74 @@
+*{ /* Modo Reset: muito utilizado - tira todas margens e padding */
+    margin: 0;
+    padding: 0;
+}
+
+html, body{ /* Informar que o tamanho do body e html são 100% */
+    height: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: rgb(15,4,4);
+background: linear-gradient(180deg, rgba(15,4,4,1) 0%, rgba(245,0,0,1) 100%);} /* Cor degrader, faz pelo site que fica mais facil*/
+
+.avatar{
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid #902222;
+    box-shadow: 0 0 20px red;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social{ /* conceito basico do flexbox é que os itens fiquem alinhados lado a lado */
+    display: flex; 
+    justify-content: space-around; /* Só funciona quando se tem um 'display: flex'; / Espace-around é um espaçamento em volta dos icones */
+    list-style: none; /* Remover as bolinhas da lista */
+    margin:20px 0;
+}
+
+.social img{
+    width: 33px;
+}
+
+.links-list{
+    list-style: none;
+}
+
+.links-list li {
+    margin: 10px 20px;
+}
+
+.links-list li a {
+    display: block; /* Para que a lista se comporte em forma de blocos ao inves de linhas (padrão) */
+    background: white;
+    padding: 15px 20px; /* Espaço entre as letras e a borda */
+    border-radius: 4px; /* Arredondamento das bordas */
+    border:3px solid white;
+    box-shadow: 0 0 20px white;
+    text-decoration: none; /* Para retirar o sublinhado do link */
+    color: rgb(30,42,110);
+    font-weight: bold;
+}
+
+.links-list li a span {
+    color: grey;
+    display: block;
+    margin-top: 10px;
+}
